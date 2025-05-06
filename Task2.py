@@ -1,9 +1,7 @@
-#Create a Personalized Greeting
+# Task 2: Sum of Integers from 1 to 50 Using a Loop
 
-a= input('Enter your first name: ')
-b= input('Enter your last name: ')
-
-a= str(a)
-b= str(b)
-
-print(f'Hello, {a} {b}! Welcome to the Python program.')
+x = 0
+for i in range(1, 51):
+    x = x + i
+    if i == 50:
+        print('The sum of number from 1 to 50 is: ', x)

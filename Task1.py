@@ -1,17 +1,10 @@
-#Perform Basic Mathematical Operations
+# Task 1: Check if a Number is Even or Odd
 
-a=input('Enter the first number: ')
-b=input('Enter the second number: ')
+a = input('Enter a number: ')
 
-a=int(a)
-b=int(b)
+a = int(a)
 
-c=a+b #Addition
-d=a-b #Subtraction
-e=a*b #Multiplication
-f=a/b #Division
-
-print("\nAddition:" ,c)
-print("Subtraction:" ,d)
-print("Multiplication:" ,e)
-print("Division:",f)
+if a % 2 == 0:
+    print(a,'is an even number.')
+else:
+    print(a,'is an odd number.')
