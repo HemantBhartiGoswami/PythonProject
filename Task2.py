@@ -1,7 +1,15 @@
-# Task 2: Sum of Integers from 1 to 50 Using a Loop
+#Using the Math Module for Calculations
+import math
 
-x = 0
-for i in range(1, 51):
-    x = x + i
-    if i == 50:
-        print('The sum of number from 1 to 50 is: ', x)
+a = input('Enter a number: ')
+
+a = int(a)
+
+x= math.sqrt(a)
+print('Square root: ',x)
+
+y= math.log(a)
+print('Logarithm: ',y)
+
+z= math.sin(a)
+print('Sine: ',z)
