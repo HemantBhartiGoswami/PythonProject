@@ -1,15 +1,20 @@
-#Using the Math Module for Calculations
-import math
+# Write and Append Data to a File
 
-a = input('Enter a number: ')
+data = input("Enter text to write to the file: ")
+file1 = open('output.txt', 'w')
+file1.write(data)
+print('Data successfully written to output.txt.\n')
+file1.close()
 
-a = int(a)
 
-x= math.sqrt(a)
-print('Square root: ',x)
+data_for_append = input('Enter additional text to append: ')
+file1 = open('output.txt', 'a')
+appending_file = file1.write('\n' + data_for_append)
+print('Data successfully appended.\n')
+file1.close()
 
-y= math.log(a)
-print('Logarithm: ',y)
 
-z= math.sin(a)
-print('Sine: ',z)
+file1 = open('output.txt', 'r')
+reading_file = file1.read()
+print('Final content of output.txt:\n',reading_file)
+file1.close()
