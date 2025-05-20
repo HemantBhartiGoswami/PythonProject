@@ -5,7 +5,7 @@
 # 3.   Reverses these extracted elements.
 # 4.   Prints both the extracted list and the reversed list
 
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+numbers = list(range(1,11))
 
 print(f'Original list: {numbers}')
 print(f'Extract first five elements: {numbers[:5]}')
